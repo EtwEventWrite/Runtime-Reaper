@@ -3,8 +3,8 @@ Runtime Reaper is a Multi-Configurable, Multi-Output Crypter for Red-Teamers and
 .NET/Native Not Guaranteed to Work.
 
 ## Information
-(License)[https://github.com/EtwEventWrite/Runtime-Reaper/blob/main/LICENSE]
-(Profile)[https://github.com/EtwEventWrite]
+[License](https://github.com/EtwEventWrite/Runtime-Reaper/blob/main/LICENSE)
+[Profile](https://github.com/EtwEventWrite)
 
 ## Features
 - .NET/Native (x64/x86) Input File Support
