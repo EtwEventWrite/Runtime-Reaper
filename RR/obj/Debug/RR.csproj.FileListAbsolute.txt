@@ -1,0 +1,9 @@
+C:\Users\miles\source\repos\RR\RR\obj\Debug\RR.csproj.AssemblyReference.cache
+C:\Users\miles\source\repos\RR\RR\obj\Debug\RR.csproj.CoreCompileInputs.cache
+C:\Users\miles\source\repos\RR\RR\bin\Debug\Runtime Reaper.exe.config
+C:\Users\miles\source\repos\RR\RR\bin\Debug\Runtime Reaper.exe
+C:\Users\miles\source\repos\RR\RR\bin\Debug\Runtime Reaper.pdb
+C:\Users\miles\source\repos\RR\RR\obj\Debug\RR.Forms.FrmMain.resources
+C:\Users\miles\source\repos\RR\RR\obj\Debug\RR.csproj.GenerateResource.cache
+C:\Users\miles\source\repos\RR\RR\obj\Debug\Runtime Reaper.exe
+C:\Users\miles\source\repos\RR\RR\obj\Debug\Runtime Reaper.pdb
