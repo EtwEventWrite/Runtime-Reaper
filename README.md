@@ -2,6 +2,10 @@
 Runtime Reaper is a Multi-Configurable, Multi-Output Crypter for Red-Teamers and Offensive Pen-testers who want to learn more about Bypassing AV's/EDR's on Runtime,
 .NET/Native Not Guaranteed to Work.
 
+## Information
+(License)[https://github.com/EtwEventWrite/Runtime-Reaper/blob/main/LICENSE]
+(Profile)[https://github.com/EtwEventWrite]
+
 ## Features
 - .NET/Native (x64/x86) Input File Support
 - Multi-Payload Encryption Support
