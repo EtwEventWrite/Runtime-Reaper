@@ -31,6 +31,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject />
@@ -59,11 +60,26 @@
     <None Include="Additional\Credits.md" />
     <None Include="Additional\TODO.md" />
     <None Include="App.config" />
+    <None Include="Bypasses %28PowerShell%29\AmsiPatch.ps1" />
+    <None Include="Bypasses %28PowerShell%29\CLMAppLockerBypass.ps1" />
+    <None Include="Bypasses %28PowerShell%29\ConstraintedBypass.ps1" />
+    <None Include="Bypasses %28PowerShell%29\LoggingBypass.ps1" />
     <None Include="License\LICENSE.MD" />
     <None Include="License\ToS.MD" />
     <EmbeddedResource Include="Stub Templates\stub_powershell.ps1" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bypasses\AmsiPatch.cs" />
+    <Compile Include="Bypasses\ApiUnhooker.cs" />
+    <Compile Include="Bypasses\AppDomainManagerBypass.cs" />
+    <Compile Include="Bypasses\AsmLoadBypass.cs" />
+    <Compile Include="Bypasses\CLRHostingBypass.cs" />
+    <Compile Include="Bypasses\ClrPatch.cs" />
+    <Compile Include="Bypasses\EtwPatch.cs" />
+    <Compile Include="Bypasses\ProcessInjection.cs" />
+    <Compile Include="Bypasses\RegAsmAbuse.cs" />
+    <Compile Include="Bypasses\StackSpoofer.cs" />
+    <Compile Include="Code Signing\CodeSigner.cs" />
     <Compile Include="Controls\Line.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -80,8 +96,8 @@
     <Compile Include="Helpers\Utils.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stub Builder\Compiler.cs" />
     <EmbeddedResource Include="Stub Templates\stub_dllnet.cs" />
-    <EmbeddedResource Include="Stub Templates\stub_dllsideloading.cs" />
     <EmbeddedResource Include="Stub Templates\stub_windowsexe.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -99,6 +115,16 @@
   <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Stub Templates\stub_native.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bypasses %28Native%29\applicationwhitelist.c" />
+    <Content Include="Bypasses %28Native%29\dllsearchorderhijacking.c" />
+    <Content Include="Bypasses %28Native%29\manualmap.c" />
+    <Content Include="Bypasses %28Native%29\modulestomp.c" />
+    <Content Include="Bypasses %28Native%29\procdoppel.c" />
+    <Content Include="Bypasses %28Native%29\reflectivedllinjection.c" />
+    <Content Include="Bypasses %28Native%29\trustedprocessabuse.c" />
+    <Content Include="Stub Templates\stub_dllsideloading.c" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

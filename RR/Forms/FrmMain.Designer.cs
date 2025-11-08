@@ -109,6 +109,7 @@
             this.linkAbout.TabIndex = 2;
             this.linkAbout.TabStop = true;
             this.linkAbout.Text = "Documentation";
+            this.linkAbout.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkAbout_LinkClicked);
             // 
             // groupStubConfig
             // 
@@ -346,11 +347,11 @@
             // 
             // groupDLL3
             // 
+            this.groupDLL3.Controls.Add(this.groupEXE);
             this.groupDLL3.Controls.Add(this.chkModuleStomping);
             this.groupDLL3.Controls.Add(this.chkDoppelganging);
             this.groupDLL3.Controls.Add(this.chkManualMapping);
             this.groupDLL3.Controls.Add(this.chkReflectiveDLLInjection);
-            this.groupDLL3.Controls.Add(this.groupEXE);
             this.groupDLL3.Location = new System.Drawing.Point(4, 85);
             this.groupDLL3.Name = "groupDLL3";
             this.groupDLL3.Size = new System.Drawing.Size(395, 144);
@@ -516,6 +517,7 @@
             this.linkGitHub.TabIndex = 12;
             this.linkGitHub.TabStop = true;
             this.linkGitHub.Text = "Noir\'s GitHub";
+            this.linkGitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkGitHub_LinkClicked);
             // 
             // linkLicense
             // 
@@ -526,6 +528,7 @@
             this.linkLicense.TabIndex = 13;
             this.linkLicense.TabStop = true;
             this.linkLicense.Text = "License && ToS";
+            this.linkLicense.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLicense_LinkClicked);
             // 
             // FrmMain
             // 

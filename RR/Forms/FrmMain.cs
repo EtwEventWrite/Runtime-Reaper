@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -97,6 +98,11 @@ namespace RR.Forms
             UpdateOutputSelectionType();
         }
 
+        private void UpdateStubTemplates()
+        {
+
+        }
+
         private void debugTestToolStripMenuItem_Click(object sender, EventArgs e)
         {
 #if DEBUG
@@ -133,11 +139,26 @@ namespace RR.Forms
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
                     txtInput.Text = ofd.FileName;
-                }
 #if DEBUG
-                lstLogging.Items.Add(@"[DEBUG] Selected EXE, OK.");
+                    lstLogging.Items.Add(@"[DEBUG] Selected EXE, OK.");
 #endif
+                }
             }
+        }
+
+        private void linkGitHub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(@"https://github.com/EtwEventWrite");
+        }
+
+        private void linkLicense_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(@"https://github.com/EtwEventWrite/Runtime-Reaper/blob/main/LICENSE");
+        }
+
+        private void linkAbout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MessageBox.Show(@"Sorry Nothing here yet!", @"RR Crypter", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
